@@ -24,7 +24,8 @@ public class TrabajadorDaoImp implements TrabajadorDao {
 	
 	@Override
 	public int create(Trabajador t) {
-		return jdbcTemplate.update("call createTrabajador()",t.getNomb(),t.getApell(),t.getArea(),t.getFinn(),t.getFfin(),t.getTotdias(),t.getNombre(),t.getTipo());
+		// TODO Auto-generated method stub
+		return jdbcTemplate.update("call ");
 	}
 
 	@Override

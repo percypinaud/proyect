@@ -7,7 +7,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import pe.edu.upeu.jdbc.dao.CategoriaDao;
 import pe.edu.upeu.jdbc.dao.ProductoDao;
-import pe.edu.upeu.jdbc.dao.TrabajadorDao;
 import pe.edu.upeu.jdbc.dao.UsuarioDao;
 import pe.edu.upeu.jdbc.entity.Producto;
 
@@ -89,11 +88,6 @@ public class Test {
 		return "hola5";
 	}
 	
-	void createTraba() {
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("root-context.xml");
-		TrabajadorDao dao = (TrabajadorDao)context.getBean("trabajorDaoImp");
-		
-	}
 	
 	
 }
