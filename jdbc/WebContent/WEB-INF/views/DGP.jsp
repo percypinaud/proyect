@@ -35,16 +35,43 @@
 					<div style="max-width: 400px">
 					 <form action="saveProd" method="post">
 					 	<div class="for-group">
-					 		<label>Producto:</label>
-					 		<input type="text" class="form-control" name="nom_prod">
+					 		<label>Trabajador:</label>
+					 		<select class="form-control">					      
+								<option value="1">Emanuel Pinaud</option>
+								<option value="2">Owen Mejia</option>
+								<option value="2">Samuel Rojas</option>
+						    </select>
 					 	</div>
 					 	<div class="for-group">
-					 		<label>Precio:</label>
-					 		<input type="text" class="form-control" name="precio">
+					 		<label>Area de trabajo:</label>
+					 		<select class="form-control">					      
+								<option value="1">Oficina</option>
+								<option value="2">Almacen</option>
+						    </select>
 					 	</div>
 					 	<div class="for-group">
-					 		<label>Cantidad:</label>
-					 		<input type="text" class="form-control" name="cantidad">
+					 		<label>Fecha de Inicio:</label>
+					 		<input type="date" class="form-control" name="fe_incio">
+					 	</div>
+					 	<div class="for-group">
+					 		<label>Fecha de Término:</label>
+					 		<input type="date" class="form-control" name="fe_fin">
+					 	</div>
+					 	<div class="for-group">
+					 		<label>Dias:</label>
+					 		<input type="text" class="form-control" name="to_dias">
+					 	</div>
+					 	<div class="for-group">
+					 		<label>Institución:</label>
+					 		<input type="text" class="form-control" name="to_dias">
+					 	</div>
+					 	
+					 	<div class="for-group">
+					 		<label>Tipo de Institución:</label>
+					 		<select class="form-control" id="exampleFormControlSelect1" name="idcategoria">					      
+								<option value="1">Privada</option>
+								<option value="2">Nacional</option>
+						    </select>
 					 	</div>
 					 	<div class="for-group" style="margin-top: 10px;">
 					 		<input type="submit" class="btn btn-primary" value="Guardar">
