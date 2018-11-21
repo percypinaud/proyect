@@ -1,6 +1,6 @@
 package pe.edu.upeu.jdbc.entity;
 
-public class Trabajador {
+public class Trabajador extends Institucion{
 	private int idtrabajador;
 	private String nomb;
 	private String apell;
@@ -8,6 +8,22 @@ public class Trabajador {
 	private String finn;
 	private String ffin;
 	private int totdias;
+	
+	
+	public Trabajador() {
+		super();
+	}
+	public Trabajador(int idinstitucion, String nombre, String tipo, int idtrabajador, String nomb, String apell,
+			String area, String finn, String ffin, int totdias) {
+		super(idinstitucion, nombre, tipo);
+		this.idtrabajador = idtrabajador;
+		this.nomb = nomb;
+		this.apell = apell;
+		this.area = area;
+		this.finn = finn;
+		this.ffin = ffin;
+		this.totdias = totdias;
+	}
 	public int getIdtrabajador() {
 		return idtrabajador;
 	}
@@ -50,21 +66,7 @@ public class Trabajador {
 	public void setTotdias(int totdias) {
 		this.totdias = totdias;
 	}
-	public Trabajador(int idtrabajador, String nomb, String apell, String area, String finn, String ffin, int totdias,
-			String particu, String privad) {
-		super();
-		this.idtrabajador = idtrabajador;
-		this.nomb = nomb;
-		this.apell = apell;
-		this.area = area;
-		this.finn = finn;
-		this.ffin = ffin;
-		this.totdias = totdias;
-	}
-	public Trabajador() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	
 }

@@ -1,32 +1,21 @@
-package pe.edu.upeu.jdbc.daoImp;
+package pe.edu.upeu.jdbc.serviceImp;
 
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
 
-import pe.edu.upeu.jdbc.dao.TrabajadorDao;
+import pe.edu.upeu.jdbc.daoImp.TrabajadorDaoImp;
 import pe.edu.upeu.jdbc.entity.Trabajador;
-@Repository
-public class TrabajadorDaoImp implements TrabajadorDao {
-	@Autowired
-	private JdbcTemplate jdbcTemplate;
-	
-	public JdbcTemplate getJdbcTemplate() {
-		return jdbcTemplate;
-	}
+import pe.edu.upeu.jdbc.service.TrabajadorService;
 
-	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
-	}
-	
+public class TrabajadorServiceImp implements TrabajadorService{
+	@Autowired
+    private TrabajadorDaoImp tr;
 	@Override
 	public int create(Trabajador t) {
-		
-		return jdbcTemplate.update("call createTrabajador()",t.getNomb(),t.getApell(),t.getArea(),t.getFinn(),t.getFfin(),t.getTotdias(),t.getNombre(),t.getTipo());
-				
+		// TODO Auto-generated method stub
+		return tr.create(t);
 	}
 
 	@Override
