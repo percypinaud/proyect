@@ -20,7 +20,6 @@
 			<h1>
 				<i class="fa fa-dashboard"></i>DGP
 			</h1>
-			<p>Lenguaje de Programación II</p>
 		</div>
 		<ul class="app-breadcrumb breadcrumb">
 			<li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -74,7 +73,7 @@
 						    </select>
 					 	</div>
 					 	<div class="for-group" style="margin-top: 10px;">
-					 		<input type="submit" class="btn btn-primary" value="Guardar">
+					 		<input type="submit" class="btn btn-dark" value="Guardar">
 					 	</div>
 					 </form>
 				</div>

@@ -31,10 +31,6 @@ public class MainController {
 public String main() {
 	return "main";
 }
-@GetMapping("/bienvenido")
-public String main2() {
-	return "main";
-}
 
 @GetMapping("/dg")
 public String main3() {
