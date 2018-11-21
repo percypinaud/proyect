@@ -102,4 +102,13 @@ public ModelAndView update(Model model, Producto pr) throws SQLException {
 	prod.update(pr);
 	return new ModelAndView("redirect:/main/producto");
 }
+
+@PostMapping("/saveDGP")
+public String registrarDGP(Model model, DGP dgp) throws SQLException {
+	dg.create(dgp);
+	return "redirect:/main/producto";
+}
+
+
+
 }
