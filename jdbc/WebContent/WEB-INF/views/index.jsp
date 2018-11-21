@@ -19,7 +19,7 @@
 	</section>
 	<section class="login-content">
 		<div class="logo">
-			<h1>SysCoco</h1>
+			<h1>DesCansar</h1>
 		</div>
 		<div class="login-box">
 			<form class="login-form" action="main/bienvenido" method="post">
